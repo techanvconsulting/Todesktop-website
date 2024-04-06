@@ -13,9 +13,99 @@
     />
     <title>Document</title>
   </head>
+
   <body>
     <!--*g navbar -->
+    <nav class="p-3 bg-white flex justify-between items-center">
+      <!-- logo -->
+      <a href="#" class="flex gap-2 items-center">
+        <img
+          src="assests/asset 0.png"
+          class="object-cover"
+          alt="website logo"
+        />
+        <span class="text-xl font-bold font-primary">ToDesktop</span>
+      </a>
+      <!--end logo -->
+      <!-- nav-menu -->
+      <div class="mene-items hidden lg:flex gap-12 text-md">
+        <a href="#" class="font-bold hover:text-primary">Pricing</a>
+        <a href="#" class="font-bold hover:text-primary">Docs</a>
+        <a href="#" class="font-bold hover:text-primary">Changelog</a>
+        <a href="#" class="font-bold hover:text-primary">Blog</a>
+        <a href="#" class="font-bold hover:text-primary">Login</a>
+      </div>
+      <!-- end nav-menu -->
+      <!-- Electron buuton -->
+      <button
+        class="hidden lg:flex justify-center items-center gap-4 rounded-md border border-black hover:bg-gray-100 px-6 py-2"
+      >
+        <img src="assests/asset 1.svg" alt="" />
+        Electron Developers
+        <i class="fa-solid fa-arrow-right text-gray-600"></i>
+      </button>
+      <!-- end Electron buuton -->
 
+      <!-- hamburger button-->
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+      <!-- end hamburger button-->
+      <!-- response mobile menu-item -->
+      <div id="nav-dialog" class="hidden fixed lg:hidden bg-white inset-0 p-3">
+        <div class="flex justify-between">
+          <a href="#" class="flex gap-2 items-center">
+            <img
+              src="assests/asset 0.png"
+              class="object-cover"
+              alt="website logo"
+            />
+            <span class="text-xl font-bold font-primary">ToDesktop</span>
+          </a>
+          <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+        </div>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="font-medium m-3 p-3 block rounded-lg hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 block rounded-lg hover:bg-gray-50"
+            >Docs</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 block rounded-lg hover:bg-gray-50"
+            >Changelog</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 block rounded-lg hover:bg-gray-50"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="font-medium m-3 p-3 block rounded-lg hover:bg-gray-50"
+            >Login</a
+          >
+          <hr />
+
+          <!-- Electron buuton -->
+          <button
+            class="w-full m-3 flex items-center gap-4 rounded-md hover:bg-gray-50 px-6 py-2 font-semibold"
+          >
+            <img src="assests/asset 1.svg" alt="" />
+            Electron Developers
+          </button>
+        </div>
+      </div>
+    </nav>
     <!--*g navbar -->
+
+    <script src="script.js"></script>
   </body>
 </html>
