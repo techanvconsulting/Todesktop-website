@@ -8,8 +8,8 @@ module.exports = {
         "secondary": "#01ee91"
       },
       fontFamily: {
-        'primary': ['Inter', 'sans-serif'],
-        "secondary": ["Poppins", 'sans-serif'],
+        'primary': ["Poppins", 'sans-serif'],
+        "secondary": ['Inter', 'sans-serif'],
         "sec": ["Roboto Mono", 'monospace'],
       }
 
