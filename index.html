@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -11,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>ToDesktop</title>
   </head>
 
   <body>
@@ -106,7 +107,56 @@
       </div>
     </nav>
     <!--*g navbar -->
-    <!-- comment -->
+    <!-- main -->
+    <main>
+      <div
+        id="hero-section"
+        class="min-h-screen bg-gradient-to-br from-purple-100 via-orange-100 to-transparent"
+      >
+        <div
+          id="hero-container"
+          class="max-w-4xl mx-auto pb-32 flex flex-col sm:items-center sm:text-center"
+        >
+          <div
+            id="version-text"
+            class="mx-6 mt-8 shadow-md hover:shadow-lg hover:-translate-y-1 transition flex items-center w-fit border border-yellow-500 bg-yellow-100 py-1 px-3 gap-2 rounded-lg group"
+          >
+            <div
+              class="w-2 h-2 rounded-full border border-yellow-400 bg-yellow-400"
+            ></div>
+            <p class="font-semibold text-yellow-900">
+              <span class="text-yellow-600">v0.21.1: </span>
+              Find-in-page bug fixes
+            </p>
+            <i
+              class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition"
+            ></i>
+          </div>
+          <h1
+            class="m-6 text-5xl font-bold leading-tight mt-4 sm:text-5xl sm:leading-node"
+          >
+            Web app to desktop app in minutes
+          </h1>
+          <p class="text-xl mx-6 mt-4 sm:text-2xl">
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+          <div class="mt-12 m-6 flex flex-col sm:flex-row gap-2">
+            <button
+              class="px-8 py-3 font-semibold rounded-lg shadow-sm hover:bg-opacity-90 border text-white bg-primary"
+            >
+              Download now
+            </button>
+            <button
+              class="px-8 py-3 font-semibold rounded-lg shadow-sm hover:bg-opacity-90 border text-black bg-white"
+            >
+              Read Docs
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main -->
 
     <script src="script.js"></script>
   </body>
